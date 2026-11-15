@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>printexo — Brand Guidelines v3</title>
+<style>
+@font-face{font-family:"Archivo";src:url("../05-typography/Archivo-Variable.ttf") format("truetype");font-weight:100 900;font-stretch:62% 125%}
+@page{size:1200px 1600px;margin:0}
+:root{--ink:#0E2F2C;--lime:#C6F432;--paper:#F3F8F1;--moss:#2E6B5E;--stone:#6E7F7A}
+*{box-sizing:border-box}body{margin:0;font-family:Archivo,Helvetica,sans-serif;color:var(--ink);background:#fff;width:1200px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+section{padding:56px 72px;border-bottom:1px solid #e3e9e2;break-inside:avoid}
+h2{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--moss);margin:0 0 8px}
+h3{font-size:36px;font-weight:900;font-stretch:110%;margin:0 0 24px;letter-spacing:-.5px}
+p,li{font-size:16px;line-height:1.55;max-width:760px}
+.row{display:flex;gap:20px;flex-wrap:wrap}.tile{border-radius:18px;display:flex;align-items:center;justify-content:center;position:relative}
+.tile img{max-width:78%;max-height:70%}.cap{font-size:12px;color:var(--stone);margin-top:8px}
+.hero{background:var(--ink);color:var(--paper);padding:72px;break-inside:avoid}.hero p{color:#cfe0d8;font-size:20px}
+.sw{width:192px;border-radius:16px;overflow:hidden;border:1px solid #e3e9e2}.sw div:first-child{height:130px}.sw .m{padding:12px 14px;font-size:13px;line-height:1.6}.sw b{font-size:16px;display:block}
+.dont{width:248px}.dont .tile{height:140px;background:var(--paper)}.dont .x{color:#D93A2B;font-weight:800;font-size:13px;margin-top:8px}
+.spec{font-size:13px;color:var(--stone)}
+.cons{background:var(--paper);border-radius:18px;padding:28px;position:relative}
+</style></head><body>
+
+<div class="hero">
+  <img src="../01-main-logo/svg/printexo-logo-duo.svg" style="height:120px">
+  <h2 style="color:var(--lime);margin-top:40px">Brand guidelines · v3.0 · November 2026</h2>
+  <p>Bold, fast and confident. <b>exo</b> means connecting: printexo is the joint between your shop, the print floor and your customer. The symbol is a <b>dovetail</b>, two halves locked by a tail that flares at the brand's one angle, the <b>30° blade</b>. The same blade cuts every stem, the i-dot, the p descender and the slice through the <b>x</b> in the wordmark.</p>
+</div>
+
+<section>
+  <h2>01 · Main logo</h2><h3>Symbol + wordmark</h3>
+  <p>The horizontal lockup is the default logo wherever there is room: site header, emails, documents, signage. The symbol spans the wordmark from ascender to descender; the gap between them is half the x-height. Never rebuild the lockup by hand. Always use the supplied files.</p>
+  <div class="row">
+    <div><div class="tile" style="width:516px;height:220px;background:var(--paper)"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg"></div><div class="cap">Primary · Deep Green on Paper</div></div>
+    <div><div class="tile" style="width:516px;height:220px;background:var(--ink)"><img src="../01-main-logo/svg/printexo-logo-duo.svg"></div><div class="cap">Signature duo · Lime tail, white on Deep Green</div></div>
+    <div><div class="tile" style="width:516px;height:220px;background:var(--ink)"><img src="../01-main-logo/svg/printexo-logo-white.svg"></div><div class="cap">Reversed · White on Deep Green</div></div>
+    <div><div class="tile" style="width:516px;height:220px;background:var(--lime)"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg"></div><div class="cap">Highlight · Deep Green on Lime</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>02 · The symbol</h2><h3>The dovetail</h3>
+  <p>A square split into two halves that lock together, like a woodworking dovetail joint that holds without glue. The tail leaves its half 64 units wide, runs 56 units and flares at exactly 30° on each side. The gap between the halves is 10 units on a 200-unit square, the same as the wordmark's blade gap. In the two-tone version the <b>tail half is Lime</b>, so the joint itself becomes the thing you remember.</p>
+  <div class="row" style="align-items:center">
+    <div class="cons" style="width:420px">
+      <svg viewBox="-20 -20 240 240" style="width:100%;display:block">
+        <path d="M0,0 L92,0 L92,68 L148,35.67 L148,164.33 L92,132 L92,200 L0,200 Z" fill="#0E2F2C"/>
+        <path d="M102,0 L200,0 L200,200 L102,200 L102,149.32 L158,181.65 L158,18.35 L102,50.68 Z" fill="#0E2F2C"/>
+        <g stroke="#2E6B5E" stroke-width="1.5" stroke-dasharray="5 4" fill="none">
+          <line x1="80" y1="74.93" x2="214" y2="-2.44"/><line x1="80" y1="125.07" x2="214" y2="202.44"/>
+          <line x1="92" y1="-14" x2="92" y2="214"/><line x1="148" y1="-14" x2="148" y2="214"/>
+        </g>
+      </svg>
+    </div>
+    <div style="max-width:560px">
+      <p><b>Construction</b> (200-unit square): joint line at 92 · tail 64 wide at the joint, 56 long · flanks at 30° (dashed) · gap 10.<br><b>Small cut</b>: the same drawing with an 18-unit gap, so the joint stays open at 16–24 px.</p>
+      <p>The masters in <i>00-masters</i> are generated by <i>build_logo.py</i>. Never redraw them.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>03 · Secondary logos</h2><h3>Stacked lockup, symbol and app icon</h3>
+  <p>Use the <b>stacked lockup</b> in square or tall spaces (stickers, labels, posters, packaging sides). Use the <b>symbol</b> alone where the wordmark would be too small or is already present: app icon, social avatar, hang tags, embroidery. <b>Below 32 px</b>, use the <b>small cut</b> app icon (favicons, tiny UI).</p>
+  <div class="row">
+    <div><div class="tile" style="width:246px;height:280px;background:var(--paper)"><img src="../02-secondary-logo/svg/printexo-logo-stacked-deepgreen.svg"></div><div class="cap">Stacked lockup</div></div>
+    <div><div class="tile" style="width:246px;height:280px;background:var(--ink)"><img src="../02-secondary-logo/svg/printexo-logo-stacked-duo.svg"></div><div class="cap">Stacked · signature duo</div></div>
+    <div><div class="tile" style="width:246px;height:280px;background:#fff;border:1px solid #e3e9e2"><img src="../03-icon/svg/printexo-app-icon.svg" style="max-width:70%"></div><div class="cap">App icon · 32 px and up</div></div>
+    <div><div class="tile" style="width:246px;height:280px;background:#fff;border:1px solid #e3e9e2"><img src="../03-icon/svg/printexo-app-icon-small.svg" style="max-width:70%"></div><div class="cap">Small cut · below 32 px</div></div>
+  </div>
+  <p style="margin-top:24px">The <b>wordmark on its own</b> (horizontal, or stacked print / exo) stays available in <i>08-wordmark</i> for places where the symbol already appears nearby, such as merch with a symbol on the front.</p>
+</section>
+
+<section>
+  <h2>04 · Clear space &amp; minimum size</h2><h3>Give it room</h3>
+  <div class="row" style="align-items:center">
+    <div class="tile" style="width:560px;height:260px;background:var(--paper)">
+      <div style="padding:36px;border:2px dashed var(--moss)"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg" style="height:84px;max-width:none;max-height:none;display:block"></div>
+    </div>
+    <div style="max-width:540px">
+      <p><b>Clear space:</b> keep a margin around the logo at least equal to the height of the letter <b>“o”</b> (the x-height). For the symbol alone, use a quarter of its width. Nothing may enter that space. The <i>on-…</i> background files already include it.</p>
+      <p><b>Minimum size:</b><br>Horizontal lockup: 120 px wide on screen · 28 mm in print<br>Stacked lockup: 56 px wide · 16 mm<br>Symbol / app icon: 32 px · 8 mm<br>Small cut app icon: 16 px · 5 mm</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>05 · Colour</h2><h3>Deep Green &amp; Lime</h3>
+  <p>Deep Green and Paper carry most of the brand. Lime is the electric accent: highlights, buttons, stickers and the dovetail's tail. Never put Lime on Paper or white (contrast 1.2:1). The two-tone <b>duo</b> logo is for Deep Green backgrounds only.</p>
+  <div class="row">
+    <div class="sw"><div style="background:#0E2F2C"></div><div class="m"><b>Deep Green</b>HEX #0E2F2C<br>RGB 14 47 44<br>CMYK 70 0 6 82<br>Primary · text &amp; logo</div></div>
+    <div class="sw"><div style="background:#C6F432"></div><div class="m"><b>Lime</b>HEX #C6F432<br>RGB 198 244 50<br>CMYK 19 0 80 4<br>Accent · dovetail tail</div></div>
+    <div class="sw"><div style="background:#F3F8F1"></div><div class="m"><b>Paper</b>HEX #F3F8F1<br>RGB 243 248 241<br>CMYK 2 0 3 3<br>Backgrounds</div></div>
+    <div class="sw"><div style="background:#2E6B5E"></div><div class="m"><b>Moss</b>HEX #2E6B5E<br>RGB 46 107 94<br>CMYK 57 0 12 58<br>Secondary / links</div></div>
+    <div class="sw"><div style="background:#6E7F7A"></div><div class="m"><b>Stone</b>HEX #6E7F7A<br>RGB 110 127 122<br>CMYK 13 0 4 50<br>Captions, large text only</div></div>
+  </div>
+  <p class="spec" style="margin-top:20px">Contrast (WCAG): Deep Green on Paper 13.3:1 · Deep Green on Lime 11.2:1 · Moss on Paper 5.8:1 · Stone on Paper 3.9:1 (large text only).<br>Ratio of use: ~60% Paper/white · 30% Deep Green · 10% Lime.<br>CMYK values are digital conversions. Lime is a very bright colour, so always run a printed proof (or match a Pantone swatch with your printer) before production.</p>
+</section>
+
+<section>
+  <h2>06 · Typography</h2><h3>Archivo</h3>
+  <p>The logo is custom lettering, not a font. For everything else use <b>Archivo</b> (free, Google Fonts, SIL Open Font License, included in <i>05-typography</i>). One family, used at contrasting weights.</p>
+  <div style="background:var(--paper);border-radius:18px;padding:36px 40px">
+    <div style="font-weight:900;font-stretch:112%;font-size:64px;line-height:1;letter-spacing:-1.5px">Print it. Ship it. Own it.</div>
+    <div class="spec" style="margin:6px 0 24px">Headlines: Archivo Black (900), Expanded width (112–125%), tracking −2%, sentence case</div>
+    <div style="font-weight:700;font-size:28px">Custom tumblers, printed on demand for your shop.</div>
+    <div class="spec" style="margin:6px 0 24px">Subheads: Archivo Bold (700), normal width</div>
+    <div style="font-weight:400;font-size:17px;line-height:1.6;max-width:720px">Upload your design, list it on your shop, and we print and ship every order. No minimums, no inventory. Body copy stays simple and readable.</div>
+    <div class="spec" style="margin-top:6px">Body: Archivo Regular (400), 16–18 px, line height 1.5–1.6 · Buttons &amp; labels: Archivo SemiBold (600)</div>
+  </div>
+</section>
+
+<section>
+  <h2>07 · Don'ts</h2><h3>Keep the logo intact</h3>
+  <div class="row">
+    <div class="dont"><div class="tile"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg" style="transform:scaleX(1.45)"></div><div class="x">✕ Don't stretch or squash</div></div>
+    <div class="dont"><div class="tile"><img src="../03-icon/svg/printexo-icon-deepgreen.svg" style="height:72px;transform:rotate(90deg)"></div><div class="x">✕ Don't rotate or flip the symbol</div></div>
+    <div class="dont"><div class="tile" style="background:#fff;border:1px solid #e3e9e2"><img src="../01-main-logo/svg/printexo-logo-duo.svg"></div><div class="x">✕ No Lime or duo on white/Paper</div></div>
+    <div class="dont"><div class="tile"><span style="font:900 44px Archivo;letter-spacing:-1px">Printexo</span></div><div class="x">✕ Don't retype it or capitalise it</div></div>
+    <div class="dont"><div class="tile"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg" style="filter:drop-shadow(6px 6px 4px rgba(0,0,0,.5))"></div><div class="x">✕ No shadows, glows or effects</div></div>
+    <div class="dont"><div class="tile" style="background:#7A3FF2"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg"></div><div class="x">✕ No off-palette colours</div></div>
+    <div class="dont"><div class="tile" style="background:repeating-linear-gradient(45deg,#2E6B5E 0 14px,#C6F432 14px 28px)"><img src="../01-main-logo/svg/printexo-logo-deepgreen.svg"></div><div class="x">✕ No busy backgrounds</div></div>
+    <div class="dont"><div class="tile"><span style="display:flex;align-items:center;gap:10px"><img src="../03-icon/svg/printexo-icon-deepgreen.svg" style="height:40px;max-width:none"><img src="../08-wordmark/svg/printexo-wordmark-deepgreen.svg" style="height:22px;max-width:none"></span></div><div class="x">✕ Don't rebuild the lockup</div></div>
+  </div>
+</section>
+
+<section style="border:0">
+  <h2>08 · Files</h2><h3>What's in the kit</h3>
+  <ul>
+    <li><b>00-masters</b>: master SVGs plus the scripts that generate every file (build_logo.py, make_variants.py, make_web_icons.py, make_rasters.py)</li>
+    <li><b>01-main-logo</b>: horizontal lockup in svg/ · png/ (600/1200/2400 px) · jpg/ (on background). Colours: deepgreen, black, white, lime, duo, on-paper, on-deepgreen, on-lime, signature, duo-on-deepgreen</li>
+    <li><b>02-secondary-logo</b>: stacked lockup, same formats and colours</li>
+    <li><b>03-icon</b>: the dovetail symbol in the same colours (64/256/1024 px), app icon and small-cut app icon</li>
+    <li><b>04-web-icons</b>: favicon.ico, favicon.svg, favicon 16/32/48, apple-touch-icon, PWA icons (192/512/maskable), site.webmanifest and a ready-to-paste &lt;head&gt; snippet</li>
+    <li><b>05-typography</b>: Archivo variable font and licence · <b>06-guidelines</b>: this document (HTML + PDF) · <b>07-mockups</b>: presentation with product mockups (HTML + PNG slides)</li>
+    <li><b>08-wordmark</b>: the wordmark alone, horizontal and stacked (print / exo), in all one-colour colourways</li>
+  </ul>
+  <p class="spec">SVG is the master format: infinitely scalable, use it for print and web. PNG has a transparent background, for apps that don't accept SVG (Canva, social media, Office). JPG files always include a background, for email and documents.</p>
+</section>
+</body></html>

@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — printexo brand. See src/agents/brand.md.
+ * 60:30:10 — white carries the page (60%), light green (Paper / tint) carries
+ * bands, panels and the sidebar (30%), Deep Green + Lime are the brand/accent
+ * (10%): buttons, icons, highlights and one closing CTA band. Text colour
+ * doesn't count toward the ratio. Never use Lime as text on white or Paper (1.2:1).
+ */
+:root {
+  /* Brand palette */
+  --brand-deep-green: #0e2f2c;
+  --brand-lime: #c6f432;
+  --brand-paper: #f3f8f1;
+  --brand-moss: #2e6b5e;
+  --brand-stone: #6e7f7a;
+
+  /* Semantic tokens */
+  --background: #ffffff; /* 60% */
+  --surface: #ffffff;
+  --tint: var(--brand-paper); /* 30%: section bands, sidebar, panels, footer */
+  --surface-muted: #e7ede5; /* deeper light green: wells, hovers, image backdrops */
+  --foreground: var(--brand-deep-green);
+  /* Stone darkened for small text: 5.2:1 on surface-muted (Stone itself is large-text only). */
+  --muted-foreground: #52625c;
+  --border: #d3ded6;
+  --primary: var(--brand-deep-green);
+  --primary-hover: #1b4a45;
+  --primary-foreground: #ffffff;
+  /* Lime tint: selected nav, chips, highlights. Deep Green text on it is 12.7:1. */
+  --primary-soft: #e9f8b8;
+  --accent: var(--brand-lime);
+  --accent-hover: #b5e61f;
+  --accent-foreground: var(--brand-deep-green);
+  --link: var(--brand-moss);
+  --success: #1f7a3a;
+  --success-soft: #e6f4e8;
+  --warning: #9a5b00;
+  --warning-soft: #fdf1d8;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+  --info: #1d4ed8;
+  --info-soft: #e8eefc;
+  --ring: var(--brand-moss);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-tint: var(--tint);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-link: var(--link);
+  --color-lime: var(--brand-lime);
+  --color-moss: var(--brand-moss);
+  --color-stone: var(--brand-stone);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-archivo);
+  --font-mono: var(--font-geist-mono);
+  --radius-card: 0.875rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Brand headline style: Archivo Black, Expanded width, −2% tracking, sentence case. */
+@utility font-display {
+  font-family: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+  font-stretch: 118%;
+  letter-spacing: -0.02em;
+}
+
+/* Lime highlight behind Deep Green text — the brand's way to emphasise words on light backgrounds. */
+@utility highlight-lime {
+  background: linear-gradient(transparent 55%, var(--brand-lime) 55%, var(--brand-lime) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding-inline: 0.08em;
+}
+
+/* Tailwind v4 removed the pointer cursor from buttons; restore it for every clickable control. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"],
+  [role="radio"],
+  a[href],
+  summary,
+  label[for],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  input[type="color"]:not(:disabled),
+  input[type="file"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"],
+  select:disabled,
+  input:disabled {
+    cursor: not-allowed;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background: var(--brand-lime);
+  color: var(--brand-deep-green);
+}

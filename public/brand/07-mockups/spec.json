@@ -1,0 +1,28 @@
+{
+  "brand": "printexo",
+  "tagline": "Print it. Ship it. Own it.",
+  "brief": "Print-on-demand for online shops: upload a design, list it on TikTok Shop, Shopee or Shopify, and printexo prints and ships every order. exo means connecting: printexo is the joint between the shop, the print floor and the customer.",
+  "adjectives": ["bold", "fast", "confident", "crafted"],
+  "criteria": "Success: an abstract symbol for connecting, built from the brand's one 30° blade angle, that works at 16 px, in one colour and next to the existing custom wordmark.",
+  "mockups": ["signage", "box", "shopping-bag", "sticker", "website", "app-icon"],
+  "nav": ["Products", "Pricing", "Start selling"],
+  "brand_color": "#0E2F2C",
+  "tile_color": "#0E2F2C",
+  "greyscale": false,
+  "final": true,
+  "designer": "printexo",
+  "concepts": [
+    {
+      "name": "printexo v3 · Dovetail",
+      "symbol": "../00-masters/printexo-symbol.svg",
+      "lockup": "../00-masters/printexo-logo.svg",
+      "stacked": "../00-masters/printexo-logo-stacked.svg",
+      "symbol_on_tile": "../03-icon/svg/printexo-icon-duo.svg",
+      "lockup_on_dark": "../01-main-logo/svg/printexo-logo-duo.svg",
+      "idea": "Two halves of a square locked by a tail that flares at the 30° blade angle: a joint that holds without glue.",
+      "rationale": ["Says connecting without drawing an object: exo is the joint", "Built from the same 30° blade as the wordmark, so symbol and lettering read as one system", "A solid square, so it is the strongest possible app icon and favicon; the Lime tail marks the connection"]
+    }
+  ],
+  "recommendation": "Roll out v3 across the site, app icon, packaging and merch, with the Lime-tail duo on Deep Green as the signature.",
+  "next_steps": ["Print proof of Lime (match a Pantone swatch)", "Professional trademark search for the dovetail symbol", "Update social avatars and marketplace shop logos"]
+}
